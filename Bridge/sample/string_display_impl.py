@@ -7,12 +7,12 @@ class StringDisplayImpl(DisplayImpl):
 		self.__string = string
 		self.__width = len(string.encode())
 	def rawOpen(self):
-		self.printLine()
+		self.__printLine()
 	def rawPrint(self):
 		print "|" + self.__string + "|"
 	def rawClose(self):
-		self.printLine()
-	def printLine(self):
+		self.__printLine()
+	def __printLine(self):
 		sys.stdout.write("+")
 		for i in xrange(0, self.__width):
 			sys.stdout.write("-")
