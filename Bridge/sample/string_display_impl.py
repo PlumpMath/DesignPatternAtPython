@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 from display_impl import DisplayImpl
 
