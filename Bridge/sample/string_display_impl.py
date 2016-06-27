@@ -14,6 +14,7 @@ class StringDisplayImpl(DisplayImpl):
 		print "|" + self.__string + "|"
 	def rawClose(self):
 		self.__printLine()
+		print
 	def __printLine(self):
 		sys.stdout.write("+")
 		for i in xrange(0, self.__width):
